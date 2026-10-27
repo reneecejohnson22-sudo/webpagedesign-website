@@ -1,0 +1,222 @@
+<html>
+	<head>
+			<title>Readmission Form</title>
+		<style>
+			.header {
+			background: #102c54;
+			color: white;
+			padding: 32px 20px;
+			border-bottom: 7px solid #d6ad45;}
+			
+			body {
+            font-family:Cambria Math;}
+			
+			.form-section{
+			max-width: 1600px;
+			margin: auto;
+			background:#f1f2fe;
+			border-radius:12px;
+			border:2px black;}
+			
+			.form-container {
+			width: 100%;
+			max-width: 1400px;
+			margin: 20px auto;
+			padding: 25px;
+			background-color: white;
+			border: 2px solid navy;
+			border-radius: 10px;}
+			
+			.red-shade{
+			display: inline-block;
+			background-color: lightpink;
+			border: 1px solid red;
+			font-size:18px;
+			color: darkred;
+			padding: 5px 10px;
+			border-radius: 4px;
+			font weight: bold;}
+			
+			.section h2{
+			font-size: 25px;
+			color: #102c54;
+			background: #edf2f9;
+			border-left: 7px solid #d6ad45;
+			padding: 13px;
+			margin-bottom: 20px;}
+			
+			table{
+			width: 1400px;;
+			margin-left:3px;
+			border-spacing: 30px;}
+			
+			select{
+			display:inline-block;
+			padding: 8px;
+			font-family:Cambria Math;}
+			
+			button {
+			background: #102c54;
+			margin-left:700px;
+			color: white;
+			border: none;
+			padding: 12px 20px;
+			border-radius: 5px;
+			cursor: pointer;
+		
+		</style>
+	</head>
+	<body>
+		<div class="form-section">
+			<header class="header">
+			<table style="color:white">
+				<tr>
+					<td><img src="utech crest.avif" height="200px" width="400px" "margin-left:20px"></td>
+					<td>
+						<h1 style="font-size:36px">UNIVERSITY OF TECHNOLOGY, JAMAICA</h1>
+						<p style="font-size:25px">APPLICATION FOR READMISSION</p>
+						<p style="font-size:20px">Academic Year <textarea name="message" rows="1" cols="5"></textarea> / <textarea name="message" rows="1" cols="5"></textarea></p>
+					</td>
+				<tr>
+			</table>
+			</header>
+		<br/>
+			<br/><br/>
+		<b style="font-size:25px"><label style="background-color:yellow"><label style="margin-left:10px">INSTRUCTIONS</label></label></b>
+			<ol>
+		<li>		
+			<label style= "font-size:18px">Complete Form in <b>BLOCK CAPITAL, lEGIBLY and ACCURATELY.</b></label>
+			<p>
+			<span class="red-shade">Forms that are not properly completed will not be processed.</span>
+				</p>
+		</li>
+		<li>
+			<label style="font-size:18px">Return the completed form to the office of the Registrar (Admissions): <span class="address">University of Technology, Jamaica, 237 Old Hope Road, Kingston 6</span> </label>
+		</li>
+		<br/>
+		<li>
+			<label style="font-size:18px">Pay the non-refundable application fee of<span class="fee"> $J350.00</span> at the Accounts Department <strong> before</strong> collecting application forms.</label>
+		</li>
+		</ol>
+
+		<form>
+				<div class="form-container">
+					<section class="section">
+							<h2>01- COURSE OF STUDY <br/><br/></h2>
+					<table class="table">
+						<tr>
+							<td><b><label for="faculty">1. FACULTY:</label></b>
+								<select name="faculty" id="faculty" required>
+									<option value="">Select Faculty</option>
+									<option value="Built Environment">Built Environment</option>
+									<option value="Business and Management"> Business and Management </option>
+									<option value="Education and Liberal Studies">Education and Liberal Studies</option>
+									<option value="Engineering and Computing">Engineering and Computing</option>
+									<option value="Health and Applied Science">Health and Applied Science</option>
+								</select></td>
+							<td colspan="2"><b><label for="idnumber">2. ID NUMBER:</label></b> <input type="number" id="idnumber" name="idnumber" placeholder="2610815" required></td>
+						</tr>
+						<tr>
+							<td><b><label for="startdate"> 3. START DATE:</label></b> <input type="date" id="startdate" name="startdate" required></td>
+							<td><b><label for="enddate"> 4. END DATE:</label></b> <input type="date" id="enddate" name="enddate" required></td>
+							<td><b><label for="course">5. COURSE OF STUDY:</label></b> <input type="text" id="course" name="course" required></td>
+						</tr>
+						<tr>
+							 <td><b><label for="major">6. MAJOR:</label></b>  <input type="text" id="major" name="major" required></td>
+							<td><b><label for="qualification">7. QUALIFICATION:</label><b> 
+								<select name="qualification" id="qualification" required>
+									<option value="">Select Qualification</option>
+									<option value="Master">Master</option>
+									<option value="Bachelor">Bachelor</option>
+									<option value="Diploma">Diploma</option>
+									<option value="Associate Degree">Associate Degree</option>
+									<option value="Certificate">Certificate</option>
+								</select>
+							</td>
+							<td><b><label for="MOA">8. MODE OF ATTENDANCE:</label></b>
+								<select name="MOA" id="MOA"required>
+									<option value="">Select Mode of Attendance</option>
+									<option value="Full-Time">Full-Time</option>
+									<option value="Part-Time">Part-Time</option>
+									<option value="Modular">Modular</option>
+									<option value="Summer">Summer</option>
+								</select>
+							</td>
+						</tr>
+				</table>
+					</section>
+				</div>
+				<div class="form-container">
+					<section class="section">
+							<h2>02- PERSONAL DETAILS <br/><br/></h2>
+					<table class="table">
+						<tr>
+							<td><b><label for="surname">9. SURNAME:</label></b> <input type="text" id="surname" name= "surname" placeholder="BROWN" required></td>
+							<td><b><label for="first name">10. FIRST NAME:</label></b> <input type="text" id="first name" name="first name" placeholder="JOHN" required></td>
+							<td colspan="2"><b><label for="middle name">11. MIDDLE NAME(S):</label></b> <input type="text" id="middle name" name="middle name" placeholder="DOE" required></td>
+						</tr>
+						<tr>
+							<td><b><label for="maiden name">12. MAIDEN NAME:</label></b> <input type="text" id="maiden name" placeholder="BLACK" required></td>
+							<td><b><label for="DOB">13. DATE OF BIRTH:</label></b> <input type="date" id="DOB" required></</td>
+							<td colspan="2"><b><label for="nationality"> 14. NATIONALITY:</label></b> <input type="text" id="nationality" placeholder="JAMAICAN" required></td>
+						</tr>
+						<tr>
+							<td>
+								<b><label>15. GENDER:</label></b>
+								<input type="radio" name="GENDER" required><label for="GENDER"><label>Male</label>
+								<input type="radio" name="GENDER" required><label for="GENDER"><label>Female</label>
+							</td>
+							<td colspan="3"><b><label for="telephone">16. TELEPHONE:</label> <input type="number"></b> (H) <input type="number"> (W) <input type="number" id="telephone" name="telephone" placeholder="(555)555-5555" required> (C)</td>
+							
+						</tr>
+						<tr>
+							<td><b><label>17. PERMANENT ADDRESS: NUMBER & STREET</label></b><br/><center><textarea name="message" rows="3" cols="30"  required></textarea></center></td>
+							<td><b><label>18.CITY/TOWN OR PARISH:</label></b> <input type="text" placeholder="KINGSTON" required></td>
+							<td><b><label>19. COUNTRY:</label></b> <input type="text" placeholder="JAMAICA" required></td>
+							<td><b><label>20. EMAIL: </label></b> <input type="email" placeholder="JOHNBROWN@GMAIL.COM" required></td>
+						</tr>
+						<tr>
+							<td><b><label>21. MAILING ADDRESS: NUMBER & STREET</label></b><br/><center><textarea name="message" rows="3" cols="30" required></textarea></center></td>
+							<td><b><label>22. CITY/TOWN OR PARISH:</label></b> <input type="text" placeholder="KINGSTON" required></td>
+							<td><b><label>23. COUNTRY:</label></b> <input type="text" placeholder="JAMAICA" required></td>
+							<td><b><label>24. EMAIL: </label></b> <input type="email" placeholder="JOHNBROWN@GMAIL.COM" required></td>
+						</tr>
+						<tr>
+							<td colspan="2"><b><label for="NOC">25. NAME OF CONTACT:</label></b> <input type="text" id="NOC" name="NOC" placeholder="JANE DOE" required></textarea></td>
+							<td colspan="2"><b><label for="relationship">26. RELATIONSHIP:</label></b> <input type="text" id="relationship" name="relationship" placeholder="MOTHER" required></td>
+						</tr>
+						<tr>
+							<td colspan="2"><b><label for="phone">27. TELEPHONE:</label></b> <input type="number"> (H) <input type="number"> (W) <input type="number" id="phone" name="phone"  placeholder="(555)555-5555" required> (C)</td>
+						</tr>
+						<tr>
+							<td colspan="3"><b><label style="margin-left:3px">28. Under what circumstances did you take a leave/take a breakfrom the University? Choose the correct response.</label></b>
+								<select name="UWC" id="UWC" required>
+									<option>Select an option</option>
+									<option value="Expired Status">Expired Status</option>
+									<option value="Disciplinary Reasons">Disciplinary Reasons</option>
+									<option value="Discontinued Status">Discontinued Status</option>
+									<option value="Leave of Absence">Leave of Absence</option>
+									<option value="Withdrawn Without Permission">Withdrawn Without Permission</option>
+									<option value="Other">Other</option>
+								</select>
+							</td>
+						</tr>
+						<tr>
+							<td colspan="4"><b><label>Please provide additional information that could be useful in processing your application.</label></b><br/><br/> <textarea name="message" rows="10" cols="160"></textarea></td>
+						</tr>
+				
+					</table>
+				</div>
+					<table>
+						<tr>
+							<td><center><b><label style="font-size:20px"> Applicant's Signature</label><b> <input type="text" required></center></td>
+							<td><b><label style="font-size:20px">Date</label></b> <input type="date" required></td>
+						</tr>
+					</table>
+					</section>
+					<br>
+				 <button type="submit">SUBMIT</button>
+		</form>
+		</div>
+	</body>
+</html>
